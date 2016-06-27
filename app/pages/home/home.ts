@@ -37,5 +37,6 @@ export class HomePage {
 
   invokeButtonDone () {
     console.log('DONE');
+    this.controlShowHide['cancelButton'] = !this.controlShowHide['cancelButton'];
   }
 }
