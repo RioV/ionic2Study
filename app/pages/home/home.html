@@ -1,0 +1,23 @@
+<ion-navbar *navbar>
+  <ion-title>Home Screen</ion-title>
+  <ion-buttons *ngIf="controlShowHide.cancelButton === true" start>  
+    <button (click)="invokeButtonCancel()">
+      Cancel
+    </button>
+  </ion-buttons>
+
+  <ion-buttons end>
+    <button (click)="invokeButtonDone()">
+      Done
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-content padding class="home">
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Input number</ion-label>
+      <ion-input type="number" pattern="[0-9]*"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
